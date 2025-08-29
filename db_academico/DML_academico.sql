@@ -49,11 +49,22 @@ INSERT INTO tb_notas (id_matricula, nota, data_lancamento) VALUES
 (4, 6.8, '2019-11-05'),
 (5, 7.9, '2020-06-22');
 
+-- INSERT adicionais para verificar consultas
 
+INSERT INTO tb_notas (id_matricula, nota, data_lancamento) VALUES 
+(6, 6.5, '2022-11-28')
+;
 
+INSERT INTO tb_matriculas (id_estudante, id_diciplina, data_matricula) VALUES 
+(1, 1, '2022-08-17') 
+;
 
+SELECT * FROM tb_diciplinas;
+INSERT INTO tb_diciplinas (nome, id_curso, id_professor) VALUES 
+('ISTs', 4, 1);
 
-
+INSERT INTO tb_estudantes (nome, data_nascimento, email, id_curso, data_matricula) VALUES 
+('ParaDeletar', CURDATE(), 'teste.delete@email.com', 1, CURDATE())
 
 
 
